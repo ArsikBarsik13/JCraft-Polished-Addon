@@ -33,6 +33,6 @@
     "minecraft": "~1.20.1",
     "java": ">=17",
     "architectury": ">=9.2.14",
-    "jcraft": ">=0.17.0"
+    "jcraft": ">=0.18.0"
   }
 }
