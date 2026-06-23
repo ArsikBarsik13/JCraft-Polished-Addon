@@ -1,32 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "myjaddon",
+  "id": "jcraftpolished",
   "version": "${version}",
-  "name": "JCraft Example Addon",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "JCraft: Polished",
+  "description": "This mod adds slab, stair, wall and pressure plate variants to JCraft: Eyes Of Ender's Polished Meteorite Block",
   "authors": [
-    "Me!"
+    "Arsik"
   ],
   "contact": {
     "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "sources": "https://github.com/ArsikBarsik13/JCraft-Polished-Addon"
   },
-  "license": "CC0-1.0",
-  "icon": "assets/myjaddon/icon.png",
+  "license": "MIT",
+  "icon": "assets/jcraftpolished/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.example.myjaddon.fabric.ExampleModFabric"
+      "net.arsik.jcraftpolished.fabric.JCraftPolishedFabric"
     ],
     "client": [
-      "com.example.myjaddon.fabric.client.ExampleModFabricClient"
+      "net.arsik.jcraftpolished.fabric.client.JCraftPolishedFabricClient"
     ],
     "fabric-datagen": [
-      "com.example.myjaddon.fabric.datagen.ExampleAddonDataGen"
+      "net.arsik.jcraftpolished.fabric.datagen.JCraftPolishedDataGen"
     ]
   },
   "mixins": [
-    "myjaddon.mixins.json"
+    "jcraftpolished.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.16.14",
