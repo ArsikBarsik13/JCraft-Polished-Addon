@@ -21,11 +21,15 @@ public class JPTagProvider {
         @Override
         protected void addTags(HolderLookup.Provider arg) {
             getOrCreateRawBuilder(BlockTags.MINEABLE_WITH_PICKAXE)
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_BLOCK.getId())
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_SLAB.getId());
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_SLAB.getId())
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_STAIRS.getId())
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId())
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
             getOrCreateRawBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_BLOCK.getId())
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_SLAB.getId());
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_SLAB.getId())
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_STAIRS.getId())
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId())
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
         }
     }
     public static class JPItemTags extends FabricTagProvider.ItemTagProvider {
@@ -38,11 +42,15 @@ public class JPTagProvider {
         protected void addTags(HolderLookup.Provider arg) {
 
             final var heavyImpact = getOrCreateTagBuilder(JTagRegistry.HEAVY_IMPACT);
-            heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_BLOCK.getId());
             heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_SLAB.getId());
+            heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_STAIRS.getId());
+            heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
+            heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
 
             final var heavy = getOrCreateTagBuilder(JTagRegistry.HEAVY);
-            heavy.add(JPItemRegistry.POLISHED_METEORITE_BLOCK.getId());
             heavy.add(JPItemRegistry.POLISHED_METEORITE_SLAB.getId());
+            heavy.add(JPItemRegistry.POLISHED_METEORITE_STAIRS.getId());
+            heavy.add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
+            heavy.add(JPItemRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
         }
 }}

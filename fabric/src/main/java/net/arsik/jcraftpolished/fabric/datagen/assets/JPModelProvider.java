@@ -1,6 +1,7 @@
 package net.arsik.jcraftpolished.fabric.datagen.assets;
 
 import lombok.NonNull;
+import net.arna.jcraft.api.registry.JBlockRegistry;
 import net.arsik.jcraftpolished.common.registry.JPBlockRegistry;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
@@ -15,8 +16,12 @@ public class JPModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(final @NonNull BlockModelGenerators generator) {
-        generator.family(JPBlockRegistry.POLISHED_METEORITE_BLOCK)
-                .slab(JPBlockRegistry.POLISHED_METEORITE_SLAB);
+        generator.family(JBlockRegistry.POLISHED_METEORITE_BLOCK.get())
+                .slab(JPBlockRegistry.POLISHED_METEORITE_SLAB.get())
+                .stairs(JPBlockRegistry.POLISHED_METEORITE_STAIRS.get())
+                .wall(JPBlockRegistry.POLISHED_METEORITE_WALL.get())
+                .pressurePlate(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get());
+
     }
 
     @Override
