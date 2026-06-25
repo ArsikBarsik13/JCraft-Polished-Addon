@@ -19,8 +19,8 @@ public interface JPItemRegistry {
 
     RegistrySupplier<Item> POLISHED_METEORITE_SLAB = register("polished_meteorite_slab", () -> new BlockItem(JPBlockRegistry.POLISHED_METEORITE_SLAB.get(), settings()));
     RegistrySupplier<Item> POLISHED_METEORITE_STAIRS = register("polished_meteorite_stairs", () -> new BlockItem(JPBlockRegistry.POLISHED_METEORITE_STAIRS.get(), settings()));
-    RegistrySupplier<Item> POLISHED_METEORITE_WALL = register("polished_meteorite_slab", () -> new BlockItem(JPBlockRegistry.POLISHED_METEORITE_WALL.get(), settings()));
-    RegistrySupplier<Item> POLISHED_METEORITE_PRESSURE_PLATE = register("polished_meteorite_slab", () -> new BlockItem(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get(), settings()));
+    RegistrySupplier<Item> POLISHED_METEORITE_WALL = register("polished_meteorite_wall", () -> new BlockItem(JPBlockRegistry.POLISHED_METEORITE_WALL.get(), settings()));
+    RegistrySupplier<Item> POLISHED_METEORITE_PRESSURE_PLATE = register("polished_meteorite_pressure_plate", () -> new BlockItem(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get(), settings()));
 
 
     static <T extends Item> RegistrySupplier<T> register(String id, Supplier<? extends T> supplier) {
