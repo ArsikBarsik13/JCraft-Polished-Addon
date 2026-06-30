@@ -4,6 +4,7 @@ import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
 import net.arna.jcraft.api.registry.JBlockRegistry;
 import net.arsik.jcraftpolished.JCraftPolished;
+import net.arsik.jcraftpolished.common.StandUserPressurePlateBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -35,7 +36,7 @@ public interface JPBlockRegistry {
             .mapColor(MapColor.COLOR_BLACK)
     ));
 
-    RegistrySupplier<PressurePlateBlock> POLISHED_METEORITE_PRESSURE_PLATE = BLOCK_REGISTRY.register("polished_meteorite_pressure_plate", () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.MOBS, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+    RegistrySupplier<StandUserPressurePlateBlock> POLISHED_METEORITE_PRESSURE_PLATE = BLOCK_REGISTRY.register("polished_meteorite_pressure_plate", () -> new StandUserPressurePlateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
             .requiresCorrectToolForDrops()
             .strength(6.0f, 1200f)
             .sound(SoundType.ANCIENT_DEBRIS)
