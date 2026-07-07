@@ -43,6 +43,7 @@ public class JPRecipeProvider extends FabricRecipeProvider {
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_WALL.get(), JItemRegistry.POLISHED_METEORITE_BLOCK.get());
 
         stonecutterResultFromBase(exporter, RecipeCategory.REDSTONE, JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get(), JItemRegistry.POLISHED_METEORITE_BLOCK.get(), 2);
+        stonecutterResultFromBase(exporter, RecipeCategory.REDSTONE, JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get(), JItemRegistry.METEORITE_BLOCK.get(), 2);
 
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JItemRegistry.POLISHED_METEORITE_BLOCK.get(), JItemRegistry.METEORITE_BLOCK.get());
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_SLAB.get(), JItemRegistry.METEORITE_BLOCK.get(), 2);
