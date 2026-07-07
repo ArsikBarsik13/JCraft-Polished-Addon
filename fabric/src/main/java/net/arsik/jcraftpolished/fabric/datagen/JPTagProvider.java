@@ -8,6 +8,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -30,6 +31,8 @@ public class JPTagProvider {
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_STAIRS.getId())
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId())
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
+            getOrCreateRawBuilder(BlockTags.WALLS)
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId());
         }
     }
     public static class JPItemTags extends FabricTagProvider.ItemTagProvider {
@@ -52,5 +55,8 @@ public class JPTagProvider {
             heavy.add(JPItemRegistry.POLISHED_METEORITE_STAIRS.getId());
             heavy.add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
             heavy.add(JPItemRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
+
+            getOrCreateTagBuilder(ItemTags.WALLS)
+                    .add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
         }
 }}
