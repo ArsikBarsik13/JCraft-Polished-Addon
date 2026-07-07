@@ -2,7 +2,6 @@ package net.arsik.jcraftpolished.common.registry;
 
 import dev.architectury.registry.registries.DeferredRegister;
 import dev.architectury.registry.registries.RegistrySupplier;
-import net.arna.jcraft.api.registry.JBlockRegistry;
 import net.arsik.jcraftpolished.JCraftPolished;
 import net.arsik.jcraftpolished.common.StandUserPressurePlateBlock;
 import net.minecraft.core.registries.Registries;
@@ -22,7 +21,7 @@ public interface JPBlockRegistry {
             .mapColor(MapColor.COLOR_BLACK)
     ));
 
-    RegistrySupplier<StairBlock> POLISHED_METEORITE_STAIRS = BLOCK_REGISTRY.register("polished_meteorite_stairs", () -> new StairBlock(JBlockRegistry.POLISHED_METEORITE_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+    RegistrySupplier<StairBlock> POLISHED_METEORITE_STAIRS = BLOCK_REGISTRY.register("polished_meteorite_stairs", () -> new StairBlock(Blocks.IRON_BLOCK.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
             .requiresCorrectToolForDrops()
             .strength(6.0f, 1200f)
             .sound(SoundType.ANCIENT_DEBRIS)

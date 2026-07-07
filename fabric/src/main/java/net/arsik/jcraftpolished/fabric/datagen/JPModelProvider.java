@@ -1,4 +1,4 @@
-package net.arsik.jcraftpolished.fabric.datagen.assets;
+package net.arsik.jcraftpolished.fabric.datagen;
 
 import lombok.NonNull;
 import net.arna.jcraft.api.registry.JBlockRegistry;

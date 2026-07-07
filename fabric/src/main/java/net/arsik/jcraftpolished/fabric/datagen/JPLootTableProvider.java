@@ -12,9 +12,11 @@ public class JPLootTableProvider {
         }
 
         @Override
-        public void generate() {dropSelf(JPBlockRegistry.POLISHED_METEORITE_SLAB.get());}
-                                {dropSelf(JPBlockRegistry.POLISHED_METEORITE_STAIRS.get());}
-                                {dropSelf(JPBlockRegistry.POLISHED_METEORITE_WALL.get());}
-                                {dropSelf(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get());}
+        public void generate() {
+            add(JPBlockRegistry.POLISHED_METEORITE_SLAB.get(), this::createSlabItemTable);
+            dropSelf(JPBlockRegistry.POLISHED_METEORITE_STAIRS.get());
+            dropSelf(JPBlockRegistry.POLISHED_METEORITE_WALL.get());
+            dropSelf(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get());
+        }
     }
 }
