@@ -7,7 +7,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 
 import java.util.function.Consumer;
 
@@ -20,8 +19,7 @@ public class JPRecipeProvider extends FabricRecipeProvider {
     @Override
     public void buildRecipes(Consumer<FinishedRecipe> exporter) {
         //crafting table recipes
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_SLAB.get(), 2)
-                .requires(JItemRegistry.POLISHED_METEORITE_BLOCK.get())
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_SLAB.get(), Ingredient.of(JItemRegistry.POLISHED_METEORITE_BLOCK.get()))
                 .unlockedBy(getHasName(JItemRegistry.POLISHED_METEORITE_BLOCK.get()), has(JItemRegistry.POLISHED_METEORITE_BLOCK.get()))
                 .save(exporter);
 
