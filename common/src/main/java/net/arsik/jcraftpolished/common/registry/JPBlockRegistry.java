@@ -42,6 +42,27 @@ public interface JPBlockRegistry {
             .mapColor(MapColor.COLOR_BLACK),BlockSetType.IRON)
     );
 
+    RegistrySupplier<SlabBlock> METEORITE_SLAB = BLOCK_REGISTRY.register("meteorite_slab", () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+            .requiresCorrectToolForDrops()
+            .strength(6.0f, 1200f)
+            .sound(SoundType.ANCIENT_DEBRIS)
+            .mapColor(MapColor.COLOR_BLACK)
+    ));
+
+    RegistrySupplier<StairBlock> METEORITE_STAIRS = BLOCK_REGISTRY.register("meteorite_stairs", () -> new StairBlock(Blocks.IRON_BLOCK.defaultBlockState(), BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+            .requiresCorrectToolForDrops()
+            .strength(6.0f, 1200f)
+            .sound(SoundType.ANCIENT_DEBRIS)
+            .mapColor(MapColor.COLOR_BLACK)
+    ));
+
+    RegistrySupplier<WallBlock> METEORITE_WALL = BLOCK_REGISTRY.register("meteorite_wall", () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)
+            .requiresCorrectToolForDrops()
+            .strength(6.0f, 1200f)
+            .sound(SoundType.ANCIENT_DEBRIS)
+            .mapColor(MapColor.COLOR_BLACK)
+    ));
+
     static void init() {
 
     }

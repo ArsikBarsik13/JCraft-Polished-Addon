@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "JCraft: Polished"
 authors = "Arsik"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+This simple mod adds slab, stair, wall and pressure plate variants to the Meteorite blocks from JCraft: Eyes Of Ender
 '''
 logoFile = "assets/jcraftpolished/icon.png"
 

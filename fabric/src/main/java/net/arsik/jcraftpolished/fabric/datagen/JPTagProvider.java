@@ -1,6 +1,5 @@
 package net.arsik.jcraftpolished.fabric.datagen;
 
-import net.arna.jcraft.api.registry.JItemRegistry;
 import net.arna.jcraft.api.registry.JTagRegistry;
 import net.arsik.jcraftpolished.common.registry.JPBlockRegistry;
 import net.arsik.jcraftpolished.common.registry.JPItemRegistry;
@@ -25,14 +24,23 @@ public class JPTagProvider {
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_SLAB.getId())
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_STAIRS.getId())
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId())
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId())
+
+                    .addElement(JPBlockRegistry.METEORITE_SLAB.getId())
+                    .addElement(JPBlockRegistry.METEORITE_STAIRS.getId())
+                    .addElement(JPBlockRegistry.METEORITE_WALL.getId());
             getOrCreateRawBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_SLAB.getId())
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_STAIRS.getId())
                     .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId())
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId())
+
+                    .addElement(JPBlockRegistry.METEORITE_SLAB.getId())
+                    .addElement(JPBlockRegistry.METEORITE_STAIRS.getId())
+                    .addElement(JPBlockRegistry.METEORITE_WALL.getId());
             getOrCreateRawBuilder(BlockTags.WALLS)
-                    .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId());
+                    .addElement(JPBlockRegistry.POLISHED_METEORITE_WALL.getId())
+                    .addElement(JPBlockRegistry.METEORITE_WALL.getId());
         }
     }
     public static class JPItemTags extends FabricTagProvider.ItemTagProvider {
@@ -50,13 +58,22 @@ public class JPTagProvider {
             heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
             heavyImpact.add(JPItemRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
 
+            heavyImpact.add(JPItemRegistry.METEORITE_SLAB.getId());
+            heavyImpact.add(JPItemRegistry.METEORITE_STAIRS.getId());
+            heavyImpact.add(JPItemRegistry.METEORITE_WALL.getId());
+
             final var heavy = getOrCreateTagBuilder(JTagRegistry.HEAVY);
             heavy.add(JPItemRegistry.POLISHED_METEORITE_SLAB.getId());
             heavy.add(JPItemRegistry.POLISHED_METEORITE_STAIRS.getId());
             heavy.add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
             heavy.add(JPItemRegistry.POLISHED_METEORITE_PRESSURE_PLATE.getId());
 
+            heavy.add(JPItemRegistry.METEORITE_SLAB.getId());
+            heavy.add(JPItemRegistry.METEORITE_STAIRS.getId());
+            heavy.add(JPItemRegistry.METEORITE_WALL.getId());
+
             getOrCreateTagBuilder(ItemTags.WALLS)
-                    .add(JPItemRegistry.POLISHED_METEORITE_WALL.getId());
+                    .add(JPItemRegistry.POLISHED_METEORITE_WALL.getId())
+                    .add(JPItemRegistry.METEORITE_WALL.getId());
         }
 }}

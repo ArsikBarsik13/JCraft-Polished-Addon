@@ -22,6 +22,10 @@ public class JPModelProvider extends FabricModelProvider {
                 .wall(JPBlockRegistry.POLISHED_METEORITE_WALL.get())
                 .pressurePlate(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get());
 
+        generator.family(JBlockRegistry.METEORITE_BLOCK.get())
+                .slab(JPBlockRegistry.METEORITE_SLAB.get())
+                .stairs(JPBlockRegistry.METEORITE_STAIRS.get())
+                .wall(JPBlockRegistry.METEORITE_WALL.get());
     }
 
     @Override

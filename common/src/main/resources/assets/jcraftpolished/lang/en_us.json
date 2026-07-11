@@ -2,5 +2,8 @@
   "block.jcraftpolished.polished_meteorite_slab": "Polished Meteorite Slab",
   "block.jcraftpolished.polished_meteorite_stairs": "Polished Meteorite Stairs",
   "block.jcraftpolished.polished_meteorite_wall": "Polished Meteorite Wall",
-  "block.jcraftpolished.polished_meteorite_pressure_plate": "Polished Meteorite Pressure Plate"
+  "block.jcraftpolished.polished_meteorite_pressure_plate": "Polished Meteorite Pressure Plate",
+  "block.jcraftpolished.meteorite_slab": "Meteorite Slab",
+  "block.jcraftpolished.meteorite_stairs": "Meteorite Stairs",
+  "block.jcraftpolished.meteorite_wall": "Meteorite Wall"
 }

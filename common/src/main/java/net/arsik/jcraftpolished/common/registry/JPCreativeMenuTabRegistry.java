@@ -19,6 +19,9 @@ public interface JPCreativeMenuTabRegistry {
                         entries.accept(JPItemRegistry.POLISHED_METEORITE_STAIRS.get());
                         entries.accept(JPItemRegistry.POLISHED_METEORITE_WALL.get());
                         entries.accept(JPItemRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get());
+                        entries.accept(JPItemRegistry.METEORITE_SLAB.get());
+                        entries.accept(JPItemRegistry.METEORITE_STAIRS.get());
+                        entries.accept(JPItemRegistry.METEORITE_WALL.get());
                     })
                     .build();
         }}

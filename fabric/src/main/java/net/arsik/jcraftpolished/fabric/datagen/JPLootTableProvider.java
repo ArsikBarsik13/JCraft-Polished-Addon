@@ -17,6 +17,10 @@ public class JPLootTableProvider {
             dropSelf(JPBlockRegistry.POLISHED_METEORITE_STAIRS.get());
             dropSelf(JPBlockRegistry.POLISHED_METEORITE_WALL.get());
             dropSelf(JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get());
+
+            add(JPBlockRegistry.METEORITE_SLAB.get(), this::createSlabItemTable);
+            dropSelf(JPBlockRegistry.METEORITE_STAIRS.get());
+            dropSelf(JPBlockRegistry.METEORITE_WALL.get());
         }
     }
 }

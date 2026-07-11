@@ -1,1 +1,1 @@
-This JCraft addon adds slab, stair, wall and pressure plate variants to the Polished Meteorite Block (WIP)
+This addon adds more variants to the Meteorite blocks JCraft adds

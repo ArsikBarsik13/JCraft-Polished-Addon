@@ -3,12 +3,12 @@
   "id": "jcraftpolished",
   "version": "${version}",
   "name": "JCraft: Polished",
-  "description": "This simple mod adds slab, stair, wall and pressure plate variants to JCraft: Eyes Of Ender's Polished Meteorite Block",
+  "description": "This simple mod adds slab, stair, wall and pressure plate variants to the Meteorite blocks from JCraft: Eyes Of Ender",
   "authors": [
     "Arsik"
   ],
   "contact": {
-    "homepage": "https://discordapp.com/channels/801259645566058528/1506544689762009168",
+    "homepage": "https://discord.com/channels/801259645566058528/1525399506991190016",
     "sources": "https://github.com/ArsikBarsik13/JCraft-Polished-Addon"
   },
   "license": "MIT",

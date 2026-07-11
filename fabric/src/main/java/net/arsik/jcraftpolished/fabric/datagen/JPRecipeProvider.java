@@ -35,10 +35,27 @@ public class JPRecipeProvider extends FabricRecipeProvider {
                 .unlockedBy(getHasName(JItemRegistry.POLISHED_METEORITE_BLOCK.get()), has(JItemRegistry.POLISHED_METEORITE_BLOCK.get()))
                 .save(exporter);
 
+
+        slabBuilder(RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.METEORITE_SLAB.get(), Ingredient.of(JItemRegistry.METEORITE_BLOCK.get()))
+                .unlockedBy(getHasName(JItemRegistry.METEORITE_BLOCK.get()), has(JItemRegistry.METEORITE_BLOCK.get()))
+                .save(exporter);
+
+        stairBuilder(JPBlockRegistry.METEORITE_STAIRS.get(), Ingredient.of(JItemRegistry.METEORITE_BLOCK.get()))
+                .unlockedBy(getHasName(JItemRegistry.METEORITE_BLOCK.get()), has(JItemRegistry.METEORITE_BLOCK.get()))
+                .save(exporter);
+
+        wallBuilder(RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.METEORITE_WALL.get(), Ingredient.of(JItemRegistry.METEORITE_BLOCK.get()))
+                .unlockedBy(getHasName(JItemRegistry.METEORITE_BLOCK.get()), has(JItemRegistry.METEORITE_BLOCK.get()))
+                .save(exporter);
+
         //stonecutter recipes
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_SLAB.get(), JItemRegistry.POLISHED_METEORITE_BLOCK.get(), 2);
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_STAIRS.get(), JItemRegistry.POLISHED_METEORITE_BLOCK.get());
         stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.POLISHED_METEORITE_WALL.get(), JItemRegistry.POLISHED_METEORITE_BLOCK.get());
+
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.METEORITE_SLAB.get(), JItemRegistry.METEORITE_BLOCK.get(), 2);
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.METEORITE_STAIRS.get(), JItemRegistry.METEORITE_BLOCK.get());
+        stonecutterResultFromBase(exporter, RecipeCategory.BUILDING_BLOCKS, JPBlockRegistry.METEORITE_WALL.get(), JItemRegistry.METEORITE_BLOCK.get());
 
         stonecutterResultFromBase(exporter, RecipeCategory.REDSTONE, JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get(), JItemRegistry.POLISHED_METEORITE_BLOCK.get(), 2);
         stonecutterResultFromBase(exporter, RecipeCategory.REDSTONE, JPBlockRegistry.POLISHED_METEORITE_PRESSURE_PLATE.get(), JItemRegistry.METEORITE_BLOCK.get(), 2);
